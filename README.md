@@ -18,3 +18,5 @@ The submitted website must also:
 6. Include at least one usage of CSS animations.
 7. Include a README in the GitHub repository for the project that details any challenges
 encountered during development as well as a link to the deployed website.
+
+Below are some issues we faced during the assignment:

@@ -20,3 +20,4 @@ The submitted website must also:
 encountered during development as well as a link to the deployed website.
 
 Below are some issues we faced during the assignment:
+Pull Request Issues

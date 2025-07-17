@@ -38,7 +38,7 @@
     object-fit: cover;
 }
 
-.main {
+body {
     background-color: var(--black);
     color: var(--off-white);
     font-family: sans-serif;

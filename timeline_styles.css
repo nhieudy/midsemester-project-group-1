@@ -179,6 +179,7 @@ header {
 /*Footer*/
 footer {
   margin-top: auto;
+  color: var(--off-white);
   background-color: var(--red);
   text-align: center;
   text-transform: uppercase;

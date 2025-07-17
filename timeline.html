@@ -8,47 +8,785 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="timeline_styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Timeline</title>
   </head>
   <body>
+    <a href="#top" id="btn">Top</button>
     <header>
-      <nav>
-      <a href="#">Home</a>
-      <a href="#">Credits</a>
-      <a href="#">Timelines</a>
-      <a href="#">Dinosaur</a>
+      <!--Navigation Bar-->
+      <nav class="menu">
+        <a class="menu_logo" href="#">Home</a>
+        <a class="menu_link" href="#">Credits</a>
+        <a class="menu_link" href="#">Timelines</a>
+        <a class="menu_link" href="#">Dinosaur</a>
       </nav>
     </header>
     <main>
+       
       <div class="main_container">
-        <section class="card_container">
-          <div class="card">
-            <img src="assets/placeholder.jpeg" alt="placeholder" />
-            <p>Year, Movie Name</p>
+        <!--Banner-->
+        <div class="banner">
+          <img class = "banner_img" src="assets/JurassicParkLogo.png" alt="Logo">
+          <div class = "banner_text">
+          <h1 class="banner_heading">Jurassic Park Movie List</h2>
           </div>
-          <div class="card">
-            <img src="assets/placeholder.jpeg" alt="placeholder" />
-          </div>
-          <div class="card">
-            <img src="assets/placeholder.jpeg" alt="placeholder" />
-          </div>
-          <div class="card">
-            <img src="assets/placeholder.jpeg" alt="placeholder" />
-          </div>
-          <div class="card">
-            <img src="assets/placeholder.jpeg" alt="placeholder" />
-          </div>
+        </div>
+        <!--Scrolling Poster Cards-->
+        <section id = "top" class="card_container">
+          <a class = "card_link" href = "#movie_one"><div class="card">
+            <img
+              class="card_poster"
+              src="assets/Timeline/JurassicPark_1.jpeg"
+              alt="Jurassic Park"
+            />
+            <p class="card_caption">Jurassic Park <br />1993</p>
+          </div></a>
+          <a class = "card_link" href = "#movie_two"><div class="card">
+            <img
+              class="card_poster"
+              src="assets/Timeline/JurassicPark_2.jpeg"
+              alt="Jurassic Park: The Lost World"
+            />
+            <p class="card_caption">Jurrasic Park: The Lost World <br />1997</p>
+          </div></a>
+          <a class = "card_link" href = "#movie_three"><div class="card">
+            <img
+              class="card_poster"
+              src="assets/Timeline/JurassicPark_3.jpeg"
+              alt="Jurassic Park III"
+            />
+            <p class="card_caption">Jurassic Park III <br />2001</p>
+          </div></a>
+          <a class = "card_link" href = "#movie_four"><div class="card">
+            <img
+              class="card_poster"
+              src="assets/Timeline/JurassicPark_4.jpg"
+              alt="Jurassic World"
+            />
+            <p class="card_caption">Jurassic World <br />2015</p>
+          </div></a>
+          <a class = "card_link" href = "#movie_five"><div class="card">
+            <img
+              class="card_poster"
+              src="assets/Timeline/JurassicPark_5.jpg"
+              alt="Jurassic World: Fallen Kingdom"
+            />
+            <p class="card_caption">Jurassic World: Fallen Kingdom<br />2018</p>
+          </div></a>
+          <a class = "card_link" href = "#movie_six"><div class="card">
+            <img
+              class="card_poster"
+              src="assets/Timeline/JurassicPark_6.jpeg"
+              alt="Battle at Big Rock"
+            />
+            <p class="card_caption">Battle At Big Rock<br />2019</p>
+          </div></a>
+          <a class = "card_link"href = "#movie_seven"><div class="card">
+            <img
+              class="card_poster"
+              src="assets/Timeline/JurassicPark_7.jpeg"
+              alt="Jurassic World Dominion"
+            />
+            <p class="card_caption">Jurassic World Dominion<br />2022</p>
+          </div></a>
+         <a class = "card_link" href = "#movie_eight"><div class="card">
+            <img
+              class="card_poster"
+              src="assets/Timeline/JurassicPark_8.jpeg"
+              alt="Jurasic World Rebirth"
+            />
+            <p class="card_caption">Jurassic World Rebirth<br />2025</p>
+          </div></a>
         </section>
-        <section class="description">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat
-            accusamus reprehenderit quos alias ipsam laboriosam, natus, sed esse
-            minima corrupti obcaecati labore consequatur corporis recusandae
-            molestiae debitis, pariatur dolorum aperiam!
-          </p>
-        </section>
+
+        <!--First Movie-->
+        <article class="movies">
+          <div class="movies_container">
+            <div>
+              <img
+                class="movies_poster"
+                src="assets/Timeline/JurassicPark_1.jpeg"
+                alt="Jurassic Park Poster"
+              />
+            </div>
+            <div class="summary_container">
+              <h2 class="movies_title" id = "movie_one">Jurassic Park</h2>
+              <p class="movies_summary">
+                Industrialist John Hammond has created Jurassic Park, a theme
+                park of de-extincted dinosaurs, on the tropical island Isla
+                Nublar, off the coast of Costa Rica. After a Velociraptor kills
+                a dinosaur handler, the park's investors, represented by lawyer
+                Donald Gennaro, threaten to pull funding unless experts certify
+                the island's safety. Gennaro invites chaotician Ian Malcolm, and
+                Hammond invites paleontologist Alan Grant and paleobotanist
+                Ellie Sattler. Upon arrival, the group is shocked to see living
+                Brachiosaurus and Parasaurolophus. At the park's visitor center,
+                the group learns that the cloning was accomplished by extracting
+                dinosaur DNA from prehistoric mosquitoes preserved in amber. DNA
+                from frogs, among other animals, was used to fill in gaps in the
+                dinosaurs' genome.<br /><br />
+                To prevent breeding, the dinosaurs were made female by direct
+                chromosome manipulation. The group witnesses the hatching of a
+                baby Velociraptor and visits the raptor enclosure. During lunch,
+                the group debates the ethics of cloning and the park's creation.
+                Malcolm warns of the implications of genetic engineering while
+                Grant and Sattler express uncertainty over the ability of humans
+                and dinosaurs to coexist. Hammond's grandchildren, Lex and Tim,
+                join the others for a park tour in two self-driving electric
+                Ford Explorer tour vehicles, while Hammond oversees them from
+                the control room. Most of the dinosaurs fail to appear, and the
+                group encounters a sick Triceratops. The tour is cut short as a
+                tropical storm approaches. The park employees leave for the
+                mainland on a boat while the visitors return to their
+                railed-electric tour vehicles, except Sattler, who stays behind
+                with the park's veterinarian, Dr. Harding, to study the
+                Triceratops.<br /><br />
+                Nedry's sabotage cuts power to the tour vehicles, stranding them
+                as they near the park's Tyrannosaurus rex paddock. Most of the
+                park's electric fences have also been deactivated, allowing the
+                Tyrannosaurus to escape and attack the group. After the
+                Tyrannosaurus overturns a tour vehicle, it injures Malcolm and
+                devours Gennaro while Grant, Lex, and Tim escape. On his way to
+                deliver the embryos to the island's docks, Nedry gets lost in
+                the rain, crashes his Jeep Wrangler, and is killed by a
+                venom-spitting Dilophosaurus. Sattler helps the game warden
+                Robert Muldoon search for survivors; they find Malcolm just
+                before the Tyrannosaurus returns and chases them away. Grant,
+                Tim, and Lex take shelter in a treetop and encounter a
+                Brachiosaurus herd. They discover the broken shells of dinosaur
+                eggs the following morning. Grant concludes that the dinosaurs
+                are breeding, which is possible because of amphibian DNA—animals
+                like West African frogs can change their sex in a single-sex
+                environment, enabling the dinosaurs to breed, proving Malcolm's
+                earlier statement that "Life finds a way". The three later
+                encounter a Gallimimus stampede being hunted by the
+                Tyrannosaurus.<br /><br />
+                Unable to decipher Nedry's code to reactivate the security
+                system, Hammond and chief engineer Ray Arnold decide to reboot
+                the park's systems. The group shuts down the park's power grid
+                and retreats to an emergency bunker while Arnold heads to a
+                maintenance shed to complete the rebooting process. When Arnold
+                fails to return, Sattler and Muldoon head over, discovering the
+                shutdown has released the Velociraptors. Muldoon distracts two
+                of them while Sattler turns the power back on before being
+                attacked by a third and discovering Arnold's severed arm. While
+                she escapes, Muldoon is caught off-guard and killed by a
+                Velociraptor.<br /><br />
+                Grant, Tim, and Lex reach the visitor center. Grant heads out to
+                look for Sattler, leaving Tim and Lex inside. The raptors appear
+                and pursue Tim and Lex throughout a kitchen, but they escape,
+                locking one in a freezer before joining Grant and Sattler. The
+                group reaches the control room, and Lex restores the park's
+                systems, allowing them to contact Hammond, who calls for help.
+                As they try to leave, they are cornered by the two remaining
+                raptors, but the Tyrannosaurus appears and kills the raptors
+                while the group flees. Hammond arrives in a jeep with Malcolm,
+                and they board a helicopter to leave the island. Grant and
+                Hammond agree not to endorse the park.
+              </p>
+            </div>
+          </div>
+
+          <!--Second Movie-->
+          <div class="movies_container">
+            <div>
+              <img
+                class="movies_poster"
+                src="assets/Timeline/JurassicPark_2.jpeg"
+                alt="Jurassic Park: The Lost World"
+              />
+            </div>
+            <div class="summary_container">
+              <h2 class="movies_title" id = "movie_two" >Jurassic Park: The Lost World</h2>
+              <p class="movies_summary">
+                Four years after the events on Isla Nublar,[a] a British family
+                anchors their yacht off a beach on Isla Sorna and comes ashore,
+                unaware of the genetically engineered dinosaurs on the island.
+                Their daughter, Cathy Bowman, wanders off and is attacked by a
+                group of Compsognathus. <br /><br />
+
+                Peter Ludlow, nephew of Dr. John Hammond, uses the incident to
+                oust Hammond and gain control of InGen. The company's second
+                facility, "Site B" on Isla Sorna, was where the dinosaurs were
+                cloned, but the island was abandoned during a hurricane several
+                years earlier. Ludlow plans to exploit Isla Sorna's dinosaurs to
+                save InGen, prompting Hammond to request Dr. Ian Malcolm's help
+                in documenting the creatures to promote a non-interference
+                policy. Ian's girlfriend, paleontologist Dr. Sarah Harding, is
+                already on Isla Sorna, leading Ian to reluctantly agree to go,
+                but only to retrieve her. <br /><br />
+
+                Ian travels to Isla Sorna with equipment specialist and
+                engineer, Eddie Carr, and video documentarian and activist, Nick
+                Van Owen. They find Sarah and discover that Ian's daughter Kelly
+                has stowed away in their research trailer. Ludlow and a
+                mercenary team arrive on the island to capture dinosaurs, with
+                help from big-game hunters Roland Tembo and Ajay Sidhu.<br /><br />
+
+                Ian's group realizes that Ludlow intends to ship the captured
+                specimens to San Diego for a new Jurassic Park, using a nearly
+                finished amphitheater that Hammond abandoned in favor of the
+                Isla Nublar site. Nick and Sarah free the captured dinosaurs,
+                and the animals wreak havoc on the InGen team's camp. On the way
+                back to the trailer, Nick rescues an injured Tyrannosaurus rex
+                infant that Roland used as bait to hunt its parent. Knowing this
+                will bring the baby's parents to them, Ian takes Kelly to safety
+                and returns to the trailer to warn Sarah and Nick. They
+                successfully treat the infant, but the Tyrannosaurus parents
+                arrive, having tracked the infant's scent. They reclaim their
+                infant and destroy the trailer by overturning and pushing it
+                partially over the cliff. Eddie arrives and attempts to pull the
+                trailer back up, but both Tyrannosaurus return and start tearing
+                Eddie's SUV apart before they devour him. <br /><br />
+
+                Ian, Sarah, and Nick are rescued by Ludlow's team and forced to
+                work together since both groups lost all their communication
+                equipment in separate attacks. They decide to travel to an
+                abandoned InGen base to call for help. After the team sets up a
+                camp, they are ambushed by the Tyrannosaurus adults. The party
+                flees into a field of long grass where a pack of Velociraptors
+                ambush them, killing Ajay and most of the team. Ian's group
+                reaches the InGen base, fights off the Velociraptors, and
+                successfully radios for helicopter extraction. Nick reveals that
+                he stole Roland's bullets to prevent him from killing his
+                trophy. However, Roland has sedated the male Tyrannosaurus with
+                tranquilizers. As InGen personnel arrive to secure the male and
+                infant, Roland declines Ludlow's job offer at the San Diego
+                park, reflecting on Ajay's death and the morality of Ludlow's
+                scheme.<br /><br />
+
+                At the Port of San Diego, Ian and Sarah attempt to convince
+                Ludlow to abandon his plans, but the ship carrying the male
+                Tyrannosaurus suddenly crashes into the docks. The crew is found
+                dead, and the adult is accidentally released and rampages
+                throughout the city. Ian and Sarah locate the infant at the
+                planned park and use it to lure the adult back to the docks.
+                Ludlow tries to retrieve the infant but is killed by the
+                dinosaurs. Sarah uses a tranquilizer gun to sedate the male
+                before government forces can use lethal force on it, and Ian
+                seals the cargo hold doors. <br /><br />
+
+                In the aftermath, the dinosaurs are shipped back to Isla Sorna
+                accompanied by the U.S. Navy. Ian, Sarah, and Kelly watch
+                Hammond in a televised interview announcing that the American
+                and Costa Rican governments have declared the island a nature
+                reserve.
+              </p>
+            </div>
+          </div>
+
+          <!--Third Movie-->
+          <div class="movies_container">
+            <div>
+              <img
+                class="movies_poster"
+                src="assets/Timeline/JurassicPark_3.jpeg"
+                alt="Jurassic Park III"
+              />
+            </div>
+            <div class="summary_container">
+              <h2 class="movies_title"  id = "movie_three">Jurassic Park III</h2>
+              <p class="movies_summary">
+                Paleontologist Alan Grant struggles to secure funding for his
+                Velociraptor research, where he attempts to prove his hypothesis
+                they were intellectually and socially advanced. Instead, he
+                finds himself rebuffing the public's obsession with the events
+                on Isla Nublar[b] and the InGen incident in San Diego.[c] He
+                receives encouragement to continue from his now-married
+                ex-girlfriend Ellie Sattler and his assistant Billy Brennan, who
+                uses 3D printing to replicate a Velociraptor larynx. Wealthy
+                couple Paul and Amanda Kirby offer to fund his research in
+                return for a guided aerial tour of Isla Sorna, claiming they
+                have permission to fly there.[d]
+                <br /><br />
+
+                Alan reluctantly agrees, flying there with Billy, two of the
+                Kirbys' mercenary associates, Udesky and Cooper, and their
+                pilot, Nash. When the Kirbys try to have Nash land the plane,
+                Alan protests and is knocked unconscious by Cooper. He awakens
+                to find they have landed, and the Kirbys refuse to leave, until
+                a Spinosaurus approaches them. They attempt to escape but the
+                dinosaur attacks their plane during take-off and kills Cooper.
+                The plane crashes in the forest, and the Spinosaurus kills Nash
+                and swallows Paul's satellite phone. The survivors flee,
+                encountering a Tyrannosaurus, which is promptly defeated by the
+                Spinosaurus as the humans escape.<br /><br />
+
+                The Kirbys reveal they are a divorced, middle-class couple
+                searching for their son Eric and Amanda's boyfriend Ben
+                Hildebrand, who have been missing for eight weeks and were last
+                seen illegally parasailing by the island. Government agencies
+                declined to help so they deceived Alan to secure his assistance,
+                mistakenly believing he had experience on Isla Sorna. The group
+                searches for Eric and Ben, finding the latter's corpse attached
+                to the parasail near a velociraptor nest. They discover the
+                InGen compound, where they are attacked by a pack of
+                Velociraptors, who kill Udesky. Alan is separated from the rest
+                of the group but is saved from the raptors by Eric, who has been
+                sheltering in a supply truck.<br /><br />
+
+                The following morning, Alan and Eric reunite with Billy and
+                Eric's parents and narrowly escape the Spinosaurus again. Alan
+                finds Billy stole Velociraptor eggs, which resulted in the
+                earlier attacks. Billy hoped to sell the eggs to fund their dig
+                site, which Alan disapproves of, but keeps the eggs regardless,
+                hoping the Velociraptors may spare the group if they are
+                returned. The group enters an aviary and is attacked by a flock
+                of Pteranodons, one of which takes Eric to its nest to feed him
+                to its young; Billy rescues Eric using the parasail but is
+                seemingly killed while the rest escape by boat along an adjacent
+                river. They retrieve the satellite phone and Grant contacts
+                Ellie for help while they are attacked once again by the
+                Spinosaurus.<br /><br />
+
+                The following day, the group hears a helicopter overhead and
+                arrives at the coast, but are ambushed by the Velociraptors, who
+                have come for the eggs. Alan, finding the replicated larynx in
+                Billy's bag, uses it to confuse the pack. Upon hearing distant
+                helicopters, the raptors reclaim their eggs and retreat. The
+                U.S. Marines and Navy, summoned by Ellie, land on the beach and
+                rescue the survivors. On a helicopter, they discover that an
+                injured Billy has also been rescued. They watch the now-freed
+                Pteranodons fly alongside them as they leave the island<br /><br />
+              </p>
+            </div>
+          </div>
+
+          <!--Fourth Movie-->
+          <div class="movies_container">
+            <div>
+              <img
+                class="movies_poster"
+                src="assets/Timeline/JurassicPark_4.jpg"
+                alt="Jurassic World"
+              />
+            </div>
+            <div class="summary_container">
+              <h2 class="movies_title"  id = "movie_four">Jurassic World</h2>
+              <p class="movies_summary">
+                Years after the Jurassic Park disaster on Isla Nublar,[b]
+                Masrani Global Corporation acquired InGen's assets and
+                eventually opened a new dinosaur theme park on the island known
+                as Jurassic World. Brothers Zach and Gray Mitchell visit the
+                park, where their aunt Claire Dearing works as the operations
+                manager. She assigns her assistant Zara to guide them, but they
+                evade her and explore on their own.
+                <br /><br />
+
+                Navy veteran and ethologist Owen Grady has been training a
+                Velociraptor squad composed of Blue, Charlie, Delta and Echo,
+                and researching their intelligence. Based on the raptors'
+                ability to follow commands, the head of InGen security Vic
+                Hoskins believes that the animals can be weaponized, an idea
+                Owen and his assistant Barry vehemently oppose.<br /><br />
+
+                Claire and Jurassic World owner Simon Masrani inspect the park's
+                newest upcoming attraction, the Indominus rex, a transgenic
+                dinosaur created by geneticist Dr. Henry Wu. Masrani tasks Owen
+                with evaluating the enclosure's security. Owen warns Claire that
+                the Indominus lacks social skills, making it dangerous and
+                unpredictable. When the Indominus seemingly escapes, Owen and
+                two other workers investigate. The dinosaur, capable of
+                camouflaging itself and masking its heat signature, suddenly
+                appears and devours the other two men, but Owen manages to
+                survive. The Indominus escapes its paddock and into the island's
+                interior. Owen urges Masrani to destroy it, but Masrani, trying
+                to protect his company's investment, sends a unit to subdue it
+                using non-lethal weaponry. After the unit is killed, Claire
+                orders the northern sector's evacuation while Masrani confronts
+                Wu about the Indominus design.<br /><br />
+
+                While exploring the park in a tour vehicle, Zach and Gray enter
+                a restricted area. The Indominus arrives and destroys the
+                vehicle, but the boys narrowly escape. They find the ruins of
+                the original Jurassic Park visitor center, repair an old Jeep
+                Wrangler, and drive back to the park resort.<br /><br />
+
+                As Claire and Owen search for the boys, they barely escape the
+                Indominus as well. Masrani and two soldiers hunt the Indominus
+                by helicopter, but it breaks into the park's aviary. The
+                Pteranodons and Dimorphodons, startled by the Indominus, flee
+                the aviary and fly into Masrani's helicopter, causing it to
+                crash and kill its passengers. The escaped pterosaurs converge
+                on the resort and attack everyone, including Zara, who is then
+                devoured by a Mosasaurus. Zach and Gray find Owen and Claire at
+                the resort as armed personnel shoot down the pterosaurs.<br /><br />
+
+                Hoskins assumes command and orders the raptors to be used to
+                track the Indominus, whereupon Owen reluctantly complies and
+                spearheads the assault with the raptors. Upon finding it, the
+                dinosaurs begin communicating among themselves. Owen realizes
+                that the Indominus has Velociraptor DNA, and it usurps Owen's
+                command of the raptors, becoming the pack's new alpha. Soldiers
+                fire on the Indominus, but it escapes. The raptors slaughter
+                most of the soldiers, while Charlie is killed in the chaos.
+                Hoskins evacuates Wu and the dinosaur embryos from the island to
+                protect his research. Owen, Claire, and the boys find Hoskins at
+                the lab securing more embryos, but Delta breaks in and kills
+                him.<br /><br />
+
+                Owen restores his bond with the three surviving raptors before
+                the Indominus reappears. The raptors attack the hybrid, but
+                Delta and Echo are killed while Blue is knocked unconscious.
+                Claire releases the Tyrannosaurus rex[c] from its paddock and
+                lures it to the Indominus. The dinosaurs attack each other, and
+                the Indominus eventually overpowers the Tyrannosaurus, but Blue
+                recovers and joins the battle. The duo fights the Indominus
+                until it gets cornered at the lagoon's edge, where it is dragged
+                underwater by the Mosasaurus. Owen and Blue part ways
+                afterwards.<br /><br />
+
+                The survivors are evacuated, and the island is abandoned once
+                again. Zach and Gray reunite with their parents, while Owen and
+                Claire decide to stay together. <br /><br />
+              </p>
+            </div>
+          </div>
+
+          <!--Fifth Movie-->
+          <div class="movies_container">
+            <div>
+              <img
+                class="movies_poster"
+                src="assets/Timeline/JurassicPark_5.jpg"
+                alt="Jurassic World"
+              />
+            </div>
+            <div class="summary_container">
+              <h2 class="movies_title"  id = "movie_five">Jurassic World: Fallen Kingdom</h2>
+              <p class="movies_summary">
+                Six months after the Jurassic World incident and the Indominus
+                rex's death,[b] a small mercenary team arrives on the abandoned
+                Isla Nublar to collect DNA from its remains in the lagoon. After
+                a two-man team collects a bone sample, the Mosasaurus devours
+                their submersible. The Tyrannosaurus attacks the team, but the
+                surviving members escape with the sample by helicopter. The
+                Mosasaurus kills one of the men and swims through the partially
+                open underwater gates into the open ocean.
+                <br /><br />
+
+                Three years later, a U.S. Senate committee debates whether Isla
+                Nublar's dinosaurs should be saved from an impending volcanic
+                eruption. Chaotician Dr. Ian Malcolm testifies that the
+                dinosaurs should perish naturally to correct the wrongful
+                cloning done by John Hammond.<br /><br />
+
+                Meanwhile, Jurassic World's former operations manager, Claire
+                Dearing, has established the Dinosaur Protection Group to save
+                the animals. After the Senate votes against government
+                involvement in rescuing the animals, Hammond's former partner,
+                Sir Benjamin Lockwood, invites Claire to his Northern California
+                estate. Lockwood and his aide, Eli Mills, reveal a plan to
+                relocate the dinosaurs to a new island sanctuary. Claire is
+                needed to reactivate the park's tracking system to locate the
+                animals, particularly Blue, the last surviving Velociraptor. She
+                recruits Owen Grady, former Velociraptor trainer, to help
+                capture Blue.<br /><br />
+
+                On Isla Nublar, Claire and former park technician Franklin Webb
+                reactivate the online tracking system. Owen, paleo-veterinarian
+                Zia Rodriguez, and a mercenary team led by Ken Wheatley, track
+                and find Blue.<br /><br />
+
+                The encounter escalates, resulting in Blue being shot and
+                Wheatley tranquilizing Owen. Wheatley abandons Owen, Claire, and
+                Franklin on the island while forcibly taking Zia hostage to
+                treat Blue. A volcano eruption begins, causing a massive
+                dinosaur stampede and forcing the trio to escape. The ship,
+                loaded with captured dinosaurs, departs as the remaining
+                dinosaurs are left behind to die in the eruption. The trio
+                sneaks aboard the ship and helps Zia transfuse Blue with
+                Tyrannosaurus blood to save her life.<br /><br />
+
+                The captured dinosaurs are actually being transported to the
+                Lockwood estate, where Lockwood's orphaned granddaughter,
+                Maisie, overhears Mills and auctioneer Mr. Eversoll secretly
+                planning to sell the dinosaurs on the black market. They will
+                also preview the Indoraptor, a weaponized, transgenic dinosaur
+                created by geneticist Dr. Henry Wu using Indominus rex and
+                Velociraptor DNA. Wu needs Blue's DNA to create an improved
+                Indoraptor that follows commands, unaware that her blood is no
+                longer pure. After Maisie informs Lockwood about the auction, he
+                confronts Mills, who smothers him to death with a pillow. Maisie
+                is later revealed to have been cloned from Lockwood's deceased
+                daughter and the reason why Hammond ended their association.<br /><br />
+
+                The auctioned dinosaurs are being immediately shipped out.
+                Franklin evades capture and frees Zia, but Owen and Claire have
+                been apprehended. Owen incites a Stygimoloch into breaking open
+                their cell. The two encounter Maisie and learn the Indoraptor is
+                being sold despite Wu's protests that it is a prototype.<br /><br />
+
+                Owen disrupts the auction by luring the Stygimoloch into the
+                room. In the ensuing chaos, Wheatley tranquilizes the Indoraptor
+                to extract a tooth as a trophy, but the hybrid, feigning
+                unconsciousness, kills him, along with Eversoll and others, as
+                it escapes. The Indoraptor chases Owen, Claire, and Maisie
+                throughout the mansion until Blue, released by Zia, attacks it.
+                After a standoff atop a high glass roof, both animals crash
+                through it, killing the Indoraptor by impaling him on a
+                ceratopsid skull though Blue is unharmed. When a hydrogen
+                cyanide gas leak threatens the caged dinosaurs, Claire attempts
+                to free them, by opening the cage doors. Owen convinces her not
+                to open the subsequent outer door, but Maisie opens it to save
+                them. As Mills attempts to escape with the Indominus rex bone,
+                the Tyrannosaurus devours him and tramples the bone. Owen,
+                Claire, Maisie, Zia and Franklin escape, while Blue and the
+                other released dinosaurs flee the estate grounds. <br /><br />
+
+                In a new U.S. Senate hearing, Dr. Malcolm declares the beginning
+                of a new Jurassic period, where humans and dinosaurs must
+                coexist. The closing scenes depict the freed dinosaurs roaming
+                the wilderness and outer urban areas.
+              </p>
+            </div>
+          </div>
+
+          <!--Sixth Movie-->
+          <div class="movies_container">
+            <div>
+              <img
+                class="movies_poster"
+                src="assets/Timeline/JurassicPark_6.jpeg"
+                alt="Battle at Big Rock"
+              />
+            </div>
+            <div class="summary_container">
+              <h2 class="movies_title"  id = "movie_six">Battle at Big Rock</h2>
+              <p class="movies_summary">
+                Set one year after the events of Jurassic World: Fallen Kingdom,
+                a blended family from Oakland, California goes on a camping trip
+                at the fictional Big Rock National Park in Northern California,
+                approximately 20 mi (32 km) from where dinosaurs from Fallen
+                Kingdom were let loose. The film chronicles the first major
+                confrontation between humans and the dinosaurs.
+                <br /><br />
+
+                At their campsite, the family is dining in their RV when they
+                are suddenly greeted by a Nasutoceratops and its baby. To their
+                horror, an Allosaurus emerges and attacks the baby, leading to a
+                battle with the adult. A second adult joins the fight, and the
+                two prevail against the Allosaurus, fleeing into the woods with
+                their baby. The Allosaurus proceeds to attack the family's RV
+                after hearing their infant crying. Upon destroying the RV, the
+                family begin to fear for the worst. To their relief, the
+                daughter shoots the Allosaurus in its head with crossbows, which
+                causes the dinosaur to flee. They embrace, though are in
+                complete shock over what just happened.<br /><br />
+
+                During the closing credits, found footage clips of dinosaurs and
+                other creatures are shown including a pack of Compsognathus
+                chasing after a scared little girl, a Stegosaurus causing a car
+                to swerve and drive off a cliff, fishermen in a boat peacefully
+                passing by a Parasaurolophus on the banks of a river, a
+                Mosasaurus eating a great white shark after the shark eats a
+                seal, and a Pteranodon swooping at a dove that had just been
+                released at a wedding.
+              </p>
+            </div>
+          </div>
+
+          <!--Seventh Movie-->
+          <div class="movies_container">
+            <div>
+              <img
+                class="movies_poster"
+                src="assets/Timeline/JurassicPark_7.jpeg"
+                alt="Jurassic World Dominion"
+              />
+            </div>
+            <div class="summary_container">
+              <h2 class="movies_title"  id = "movie_seven">Jurassic World Dominion</h2>
+              <p class="movies_summary">
+                Four years after the Lockwood Estate incident that followed the
+                volcanic eruption of Isla Nublar,[b] once-extinct dinosaurs and
+                other prehistoric animals freely roam the Earth. Amid global
+                efforts to control them, Biosyn Genetics establishes a dinosaur
+                preserve in Italy's Dolomites and conducts genomics research,
+                ostensibly for pharmacological applications.
+                <br /><br />
+
+                Claire Dearing, Zia Rodriguez, and Franklin Webb investigate
+                illegal dinosaur breeding sites, also gathering proof of cases
+                of animal cruelty. Claire's partner, Owen Grady, helps relocate
+                stray dinosaurs. At their remote cabin in the Sierra Nevada
+                mountains, Claire and Owen secretly raise 14-year-old Maisie
+                Lockwood (Benjamin Lockwood's biogenetic granddaughter) and
+                protect her from groups seeking to exploit her unique genetic
+                makeup.<br /><br />
+
+                When Blue, the Velociraptor Owen raised and trained, arrives at
+                the cabin with an asexually-reproduced hatchling, Maisie names
+                it Beta. Increasingly frustrated living in seclusion, Maisie
+                sneaks away to explore. Mercenaries searching for Maisie find
+                and kidnap her and capture Beta.<br /><br />
+
+                Meanwhile, swarms of giant locusts are decimating U.S. crops.
+                Dr. Ellie Sattler observes that crops grown with Biosyn seeds
+                are left uneaten, raising suspicions that Biosyn created the
+                insects. She takes a captured locust to her former romantic
+                partner, paleontologist Dr. Alan Grant and reveals she is now
+                divorced from her husband Mark.[c] They determine the locust was
+                genetically engineered with Cretaceous-period and contemporary
+                DNA.<br /><br />
+
+                Franklin, now with the CIA's dangerous-species division,
+                believes Maisie may have been taken to Malta. Upon arrival
+                there, Claire and Owen infiltrate a dinosaur black market with
+                Owen's former Jurassic World colleague Barry Sembène, who is
+                leading a French Intelligence raid. Carnivorous dinosaurs are
+                unleashed during the foray, wreaking havoc. When Claire and Owen
+                learn that Maisie and Beta were transported to the Biosyn
+                facility, sympathetic cargo pilot Kayla Watts agrees to fly them
+                there.<br /><br />
+
+                Chaotician Dr. Ian Malcolm now works for Biosyn. He sought
+                Ellie's help to expose CEO Dr. Lewis Dodgson after
+                communications director Ramsay Cole warned him of Dodgson's
+                illegal activities. Dodgson is exploiting dinosaurs and coerces
+                former InGen geneticist Dr. Henry Wu to modify the transgenic
+                locust to let Biosyn corner the world's food supply. Wu
+                denounces the plan, warning it will cause an ecological collapse
+                as the locusts spread unchecked.<br /><br />
+
+                Wu meets Maisie and explains that his former colleague, Dr.
+                Charlotte Lockwood (Benjamin Lockwood's deceased daughter), used
+                her own DNA to replicate and give birth to the genetically
+                identical Maisie. She also altered Maisie's DNA to prevent her
+                from inheriting the fatal disease which she had. Wu believes
+                that Maisie and Beta's asexual conception and DNA are key to
+                creating a pathogen to halt the locust outbreak.<br /><br />
+
+                A Quetzalcoatlus attacks Kayla's plane in Biosyn's airspace,
+                forcing Owen and Kayla to crash land while Claire is ejected.
+                After separate dinosaur encounters, the three regroup. Inside
+                Biosyn, Ian and Ramsay covertly advise Ellie and Alan on where
+                to obtain a locust DNA sample. While searching for the lab, they
+                encounter Maisie. Discovering the breach, Dodgson attempts to
+                incinerate the locusts to destroy evidence; some locusts escape
+                through an air vent while ablaze, sparking a wildfire around the
+                preserve. <br /><br />
+
+                Alan, Ellie, and Maisie barely escape the facility before
+                finding Ian. They meet Owen, Claire and Kayla, with Ramsay later
+                joining them. Dodgson flees with dinosaur embryos[d] via a
+                hyperloop, but becomes trapped after Claire and Ellie reroute
+                the power and is then killed by a trio of Dilophosaurus. As the
+                group works together, Owen, with Alan and Maisie's help,
+                captures Beta. They and Wu escape in a Biosyn helicopter amidst
+                a fight between a Giganotosaurus and Isla Nublar's former
+                resident Tyrannosaurus,[e] the latter assisted by a
+                Therizinosaurus.
+              </p>
+            </div>
+          </div>
+
+          <!--Eighth Movie-->
+          <div class="movies_container">
+            <div>
+              <img
+                class="movies_poster"
+                src="assets/Timeline/JurassicPark_8.jpeg"
+                alt="Jurassic World Rebirth"
+              />
+            </div>
+            <div class="summary_container">
+              <h2 class="movies_title"  id = "movie_eight">Jurassic World Rebirth</h2>
+              <p class="movies_summary">
+                In 2008, seven years after the rescue of Eric Kirby[b] and seven
+                years before the Jurassic World incident,[c] InGen uses a
+                laboratory on the island of Île Saint-Hubert in the Atlantic
+                Ocean to create transgenetic mutated dinosaurs. One of these
+                creations, a deformed six-limbed tyrannosaur dubbed "Distortus
+                rex" escapes containment, kills an employee and wreaks havoc,
+                forcing the facility personnel to abandon the island.
+                <br /><br />
+
+                In the present, five years after the Biosyn incident that caused
+                the transgenic locust outbreak,[d] the Earth's climate becomes
+                inhospitable to sustain the de-extinct animals. They are forced
+                to reside in areas around the equator, which resemble the
+                Mesozoic climate, making them marked as no-travel zones.<br /><br />
+
+                Martin Krebs, an executive at pharmaceutical company
+                ParkerGenix, recruits Zora Bennett, an ex-military covert
+                operative, to collaborate with paleontologist Dr. Henry Loomis
+                on a top-secret mission. Their goal is to retrieve biomaterial
+                samples from the three largest remaining prehistoric specimens,
+                which hold the key to a new heart disease treatment. In a bar in
+                Suriname, Zora recruits her longtime friend Duncan Kincaid to
+                lead the expedition. He brings boat driver LeClerc, mercenary
+                Nina, and security chief Bobby Atwater.
+
+                <br /><br />
+
+                The expedition team sets out to Île Saint-Hubert to extract
+                samples from the aquatic Mosasaurus, terrestrial Titanosaurus,
+                and avian Quetzalcoatlus. Meanwhile, Reuben Delgado is sailing
+                nearby with his daughters Isabella and Teresa, before the latter
+                leaves for college. Traveling with them is Teresa's boyfriend
+                Xavier Dobbs, whom Reuben finds obnoxious. The family are
+                shipwrecked by the Mosasaurus and use a radio to call for help,
+                with the expedition team coming to their rescue.<br /><br />
+
+                The team soon encounters the Mosasaurus and extracts a sample
+                from it, but the creature returns with a group of Spinosaurus
+                and attacks the ship, killing Bobby. Teresa attempts to use the
+                radio to call for help, but Martin panics and shoves her away to
+                protect the mission's secrecy. Teresa falls overboard after
+                Martin refuses to help her. Xavier jumps overboard to rescue
+                her, followed by Reuben and Isabella, separating from the
+                expedition team. The mosasaur forces the ship aground, and Nina
+                is killed onshore by a Spinosaurus. Zora informs the survivors
+                that she employed a rescue helicopter to circle the island in 24
+                hours.<br /><br />
+
+                The team locates a Titanosaurus herd in a field and easily
+                extracts the second sample. Because the Quetzalcoatlus is a
+                large and carnivorous animal, the team hopes to avoid issues by
+                getting their final sample from an egg instead. Zora, Henry and
+                LeClerc rappel to reach the nest, located in an ancient temple
+                on the side of a cliff. A parent Quetzalcoatlus returns to the
+                nest and devours LeClerc, although Zora and Henry manage to
+                escape with the sample.<br /><br />
+
+                Elsewhere on the island, Reuben commends Xavier for rescuing
+                Teresa in the water. Xavier survives being attacked by a
+                Velociraptor which is subsequently preyed upon by a Mutadon, a
+                mutated raptor/pterosaur hybrid. The family searches for the
+                InGen complex and encounters various dinosaurs, including an
+                Aquilops, whom Isabella adopts and names Dolores. They find a
+                raft and, after surviving a Tyrannosaurus rex attack, proceed
+                down a river.<br /><br />
+
+                At the complex, the family reunites with the expedition group.
+                When Teresa recognizes Martin, he holds the others at gunpoint,
+                steals the samples from Zora and flees to the helipad alone by
+                UTV. A pack of Mutadons descend on the survivors, who escape
+                through underground tunnels.<br /><br />
+
+                The rescue helicopter arrives but is destroyed by the Distortus
+                rex, which then devours Martin. The survivors reach a locked
+                gate at the end of the tunnel and see a boat on the other side.
+                Isabella, small enough to fit through the gate, unlocks it,
+                allowing the group to load onto the boat while Duncan diverts
+                the D. rex using a flare. Zora, Henry, Reuben, Teresa, Xavier,
+                and Isabella escape. Duncan escapes the retreating D. rex and
+                joins them. With the samples in hand, Zora and Henry agree to
+                distribute the new medication without a patent, making it
+                open-source for the entire planet.
+              </p>
+            </div>
+          </div>
+        </article>
       </div>
     </main>
-    <footer> Group 1 Mid-Semester Project</footer>
+    <footer>Group 1 Mid-Semester Project</footer>
   </body>
 </html>

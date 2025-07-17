@@ -1,0 +1,85 @@
+:root {
+  --black: #151515;
+  --dark-grey: #403d39;
+  --light-grey: #ccc5b9;
+  --off-white: #fffcf2;
+  --red: #aa2324;
+  --yellow: #e5cb5f;
+}
+.animate__animated.animate__fadeIn {
+  animation-duration: 4s;
+}
+
+/*Utility Classes*/
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+  background-color: var(--black);
+  min-height: 100vh;
+}
+header {
+  background-color: var(--red);
+  padding: 25px 10px;
+}
+
+/*Menu Bar*/
+.nav_container {
+  align-items: center;
+}
+
+.menu_logo {
+  margin: -10px;
+  width: 150px;
+  height: auto;
+}
+
+.menu_link {
+  color: var(--off-white);
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 1.25rem;
+}
+
+.menu_link:hover,
+.menu_logo:hover {
+  color: var(--yellow);
+}
+
+footer {
+  margin-top: auto;
+  color: var(--off-white);
+  background-color: var(--red);
+  text-align: center;
+  text-transform: uppercase;
+  padding: 24px 0;
+}
+@media (min-width: 768px) {
+  /*For Menu*/
+  header {
+    flex-direction: column;
+  }
+  .nav_container {
+    padding: 0 40px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .menu_link {
+    margin-left: 30px;
+    font-size: 1.25rem;
+  }
+}

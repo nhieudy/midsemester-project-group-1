@@ -6,31 +6,52 @@
   --red: #aa2324;
   --yellow: #e5cb5f;
 }
+.animate__animated.animate__fadeIn{
+  animation-duration: 4s;
+}
 
+/*Utility Classes*/
+.column{
+  display:flex;
+  flex-direction: column;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+html{
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Outfit", sans-serif;
   margin: 0;
   background-color: var(--black);
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
 }
- #btn {
-     position: fixed;
-     bottom: 10px;
-     right: 10px;
-     z-index: 99;
-     font-size: 15px;
-     border: none;
-     outline: none;
-     background-color: var(--off-white); 
-     color:var(--dark-grey);
-     cursor: pointer;
-     padding: 15px;
-     border-radius: 4px;
+/*Top Arrow*/
+.top_arrow{
+  width: 10px;
+  height: auto;
 }
- #btn:hover {
-     background-color: white;
+.top_button{
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: var(--off-white);
+  color: var(--dark-grey);
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 100%;
+  text-decoration: none;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+.top_button:hover {
+  color: var(--red);
 }
 /*Everything about Header*/
 header {
@@ -40,11 +61,26 @@ header {
   background-color: var(--red);
   padding: 25px 10px;
 }
+
+/*Menu Bar*/
 .menu {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }
+
+.menu_link, .menu_logo{
+  color: var(--off-white);
+  text-decoration: none;
+  margin-bottom: 5px;
+  font-size: 1.25rem;
+}
+
+.menu_link:hover, .menu_logo:hover{
+  color: var(--yellow);
+}
+
+/*Banner*/
 .banner {
   text-align: center;
   align-items: center;
@@ -52,24 +88,19 @@ header {
   width: 100%;
   height: 400px;
   background-color: var(--red);
- /* background-image: url(assets/Jungle.jpg);
+  /* background-image: url(assets/Jungle.jpg); Didn't really like this banner
   background-size: cover;*/
-  display: flex;
-  flex-direction: column;
   background-position: center;
+  margin-bottom: -100px;
+  margin-top: -50px;
 }
 
-.banner_img{
-  width: 400px;
+.banner_img {
+  width: 300px;
   height: auto;
-  margin: -75px;
 }
 /*End of Header*/
 
-.main_container {
-  display: flex;
-  flex-direction: column;
-}
 /*Everything that involves the Movie Cards*/
 .card_subheading {
   text-align: center;
@@ -104,11 +135,11 @@ header {
   /*box-shadow: 0 0 10px 10px rgb(170, 35, 36, 0.3);*/
   transform: scale(1.05);
 }
-.card_link{
-text-decoration: none;
-color: var(--black);
+.card_link {
+  text-decoration: none;
+  color: var(--black);
 }
-.card_link:hover{
+.card_link:hover {
   color: var(--red);
 }
 .card_caption {
@@ -116,20 +147,25 @@ color: var(--black);
 }
 /*End of Movie Cards*/
 
-/*Everything that involves Movie Container*/
+/*Everything that involves Movie Summary*/
 .movies_container {
-background-color: var(--black);
+  background-color: var(--black);
   color: var(--light-grey);
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: space-evenly;
   align-items: center;
-  padding: 25px;
+  padding: 35px;
 }
 
 .movies_container:nth-child(even) {
   color: var(--black);
-    background-color: var(--light-grey);
+  background-color: var(--light-grey);
+}
+
+.movies_poster_container{
+  text-align: center;
+  font-weight: 600;
 }
 
 .movies_poster {
@@ -138,19 +174,24 @@ background-color: var(--black);
   border-radius: 50px;
   object-fit: cover;
   padding: 25px;
-
 }
 
 .movies_summary {
   padding: 25px;
 }
 
+.movies_summary::first-letter{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
 .movies_title {
+  font-size: xx-large;
   padding: 0 25px;
   text-align: center;
 }
 /*End of Movie Container*/
 
+/*Footer*/
 footer {
   margin-top: auto;
   background-color: var(--red);
@@ -161,10 +202,16 @@ footer {
 
 /*For Desktop test*/
 @media (min-width: 768px) {
+  .banner_heading{
+    font-size: 2.5rem;
+  }
   .menu {
     flex-direction: row;
   }
-
+  .menu_link{
+      margin-left: 45px;
+      font-size: 1.5rem;
+  }
   .movies_container:nth-child(odd) {
     flex-direction: row;
   }

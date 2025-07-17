@@ -1,6 +1,4 @@
 # midsemester-project-group-1
-__
-TEST BRANCH
 Midsemester Project: Group 1
 
 Instructions
@@ -22,4 +20,4 @@ The submitted website must also:
 encountered during development as well as a link to the deployed website.
 
 Below are some issues we faced during the assignment:
-Pull Request Issues: I had forgotten to add Jordyn and Ros
+Pull Request Issues: I had forgotten to add Jordyn and Rosaline as Contributors!

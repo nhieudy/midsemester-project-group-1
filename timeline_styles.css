@@ -6,36 +6,38 @@
   --red: #aa2324;
   --yellow: #e5cb5f;
 }
-.animate__animated.animate__fadeIn{
+.animate__animated.animate__fadeIn {
   animation-duration: 4s;
 }
 
 /*Utility Classes*/
-.column{
-  display:flex;
+.column {
+  display: flex;
   flex-direction: column;
 }
 
-.row{
+.row {
   display: flex;
   flex-direction: row;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
+
 body {
   font-family: "Outfit", sans-serif;
   margin: 0;
   background-color: var(--black);
   min-height: 100vh;
 }
+
 /*Top Arrow*/
-.top_arrow{
+.top_arrow {
   width: 10px;
   height: auto;
 }
-.top_button{
+.top_button {
   position: fixed;
   bottom: 5px;
   right: 5px;
@@ -60,7 +62,7 @@ header {
 }
 
 /*Menu Bar*/
-.nav_container{
+.nav_container {
   align-items: center;
 }
 
@@ -70,18 +72,17 @@ header {
   height: auto;
 }
 
-.menu_link{
+.menu_link {
   color: var(--off-white);
   text-decoration: none;
   margin-left: 15px;
   font-size: 1.25rem;
 }
 
-.menu_link:hover, .menu_logo:hover{
+.menu_link:hover,
+.menu_logo:hover {
   color: var(--yellow);
 }
-
-
 
 /*End of Header*/
 
@@ -147,7 +148,7 @@ header {
   background-color: var(--light-grey);
 }
 
-.movies_poster_container{
+.movies_poster_container {
   text-align: center;
   font-weight: 600;
 }
@@ -164,7 +165,7 @@ header {
   padding: 25px;
 }
 
-.movies_summary::first-letter{
+.movies_summary::first-letter {
   font-size: 1.5rem;
   font-weight: 600;
 }
@@ -187,18 +188,18 @@ footer {
 /*For Desktop test*/
 @media (min-width: 768px) {
   /*For Menu*/
-  header{
+  header {
     flex-direction: column;
   }
-  .nav_container{
+  .nav_container {
     padding: 0 40px;
     flex-direction: row;
     justify-content: space-between;
   }
 
-  .menu_link{
-      margin-left: 30px;
-      font-size: 1.25rem;
+  .menu_link {
+    margin-left: 30px;
+    font-size: 1.25rem;
   }
 
   /*Change direction for movie summary cards*/

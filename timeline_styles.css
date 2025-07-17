@@ -55,24 +55,25 @@ body {
 }
 /*Everything about Header*/
 header {
-  z-index: 1;
-  top: 0;
-  display: flex;
   background-color: var(--red);
   padding: 25px 10px;
 }
 
 /*Menu Bar*/
-.menu {
+.nav_container{
   align-items: center;
-  justify-content: center;
-  margin: auto;
 }
 
-.menu_link, .menu_logo{
+.menu_logo {
+  margin: -10px;
+  width: 150px;
+  height: auto;
+}
+
+.menu_link{
   color: var(--off-white);
   text-decoration: none;
-  margin-bottom: 5px;
+  margin-left: 15px;
   font-size: 1.25rem;
 }
 
@@ -80,25 +81,8 @@ header {
   color: var(--yellow);
 }
 
-/*Banner*/
-.banner {
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 400px;
-  background-color: var(--red);
-  /* background-image: url(assets/Jungle.jpg); Didn't really like this banner
-  background-size: cover;*/
-  background-position: center;
-  margin-bottom: -100px;
-  margin-top: -50px;
-}
 
-.banner_img {
-  width: 300px;
-  height: auto;
-}
+
 /*End of Header*/
 
 /*Everything that involves the Movie Cards*/
@@ -202,16 +186,22 @@ footer {
 
 /*For Desktop test*/
 @media (min-width: 768px) {
-  .banner_heading{
-    font-size: 2.5rem;
+  /*For Menu*/
+  header{
+    flex-direction: column;
   }
-  .menu {
+  .nav_container{
+    padding: 0 40px;
     flex-direction: row;
+    justify-content: space-between;
   }
+
   .menu_link{
-      margin-left: 45px;
-      font-size: 1.5rem;
+      margin-left: 30px;
+      font-size: 1.25rem;
   }
+
+  /*Change direction for movie summary cards*/
   .movies_container:nth-child(odd) {
     flex-direction: row;
   }

@@ -64,15 +64,13 @@ header {
 
 /*Menu Bar*/
 .menu {
-  align-items: center;
-  justify-content: center;
-  margin: auto;
+margin:auto;
 }
 
 .menu_link, .menu_logo{
   color: var(--off-white);
   text-decoration: none;
-  margin-bottom: 5px;
+  margin-left: 15px;
   font-size: 1.25rem;
 }
 
@@ -86,17 +84,16 @@ header {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 400px;
+  height: 125px;
   background-color: var(--red);
   /* background-image: url(assets/Jungle.jpg); Didn't really like this banner
   background-size: cover;*/
   background-position: center;
-  margin-bottom: -100px;
-  margin-top: -50px;
 }
 
 .banner_img {
-  width: 300px;
+  margin-top: 15px;
+  width: 150px;
   height: auto;
 }
 /*End of Header*/

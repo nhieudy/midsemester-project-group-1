@@ -14,109 +14,142 @@
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>Timeline</title>
   </head>
-  <body>
-    <a href="#top" id="btn">Top</button>
+  <body class = "column">
+    <!--Button That Goes To Top-->
+    <a href="#top" class="top_button"
+      ><img class="top_arrow" src="assets/up-arrow.png"
+    /></a>
+    <!--Banner-->
+    <div class="banner column">
+      <img
+        class="banner_img animate__animated animate__fadeIn"
+        src="assets/JurassicParkLogo.png"
+        alt="Logo"
+      />
+      <div class="banner_text animate__animated animate__fadeIn">
+        <!--<h1 class="banner_heading">Jurassic Park Movie List</h1>-->
+      </div>
+    </div>
     <header>
       <!--Navigation Bar-->
-      <nav class="menu">
-        <a class="menu_logo" href="#">Home</a>
-        <a class="menu_link" href="#">Credits</a>
-        <a class="menu_link" href="#">Timelines</a>
+      <nav class="menu column">
+        <a class="menu_logo menu_link" href="index.html">Home</a>
+        <a class="menu_link" href="credits.html">Credits</a>
+        <a class="menu_link" href="timeline.html">Movies</a>
         <a class="menu_link" href="#">Dinosaur</a>
       </nav>
     </header>
     <main>
-       
-      <div class="main_container">
-        <!--Banner-->
-        <div class="banner">
-          <img class = "banner_img" src="assets/JurassicParkLogo.png" alt="Logo">
-          <div class = "banner_text">
-          <h1 class="banner_heading">Jurassic Park Movie List</h2>
-          </div>
-        </div>
+      <div class="main_container column">
         <!--Scrolling Poster Cards-->
-        <section id = "top" class="card_container">
-          <a class = "card_link" href = "#movie_one"><div class="card">
-            <img
-              class="card_poster"
-              src="assets/Timeline/JurassicPark_1.jpeg"
-              alt="Jurassic Park"
-            />
-            <p class="card_caption">Jurassic Park <br />1993</p>
-          </div></a>
-          <a class = "card_link" href = "#movie_two"><div class="card">
-            <img
-              class="card_poster"
-              src="assets/Timeline/JurassicPark_2.jpeg"
-              alt="Jurassic Park: The Lost World"
-            />
-            <p class="card_caption">Jurrasic Park: The Lost World <br />1997</p>
-          </div></a>
-          <a class = "card_link" href = "#movie_three"><div class="card">
-            <img
-              class="card_poster"
-              src="assets/Timeline/JurassicPark_3.jpeg"
-              alt="Jurassic Park III"
-            />
-            <p class="card_caption">Jurassic Park III <br />2001</p>
-          </div></a>
-          <a class = "card_link" href = "#movie_four"><div class="card">
-            <img
-              class="card_poster"
-              src="assets/Timeline/JurassicPark_4.jpg"
-              alt="Jurassic World"
-            />
-            <p class="card_caption">Jurassic World <br />2015</p>
-          </div></a>
-          <a class = "card_link" href = "#movie_five"><div class="card">
-            <img
-              class="card_poster"
-              src="assets/Timeline/JurassicPark_5.jpg"
-              alt="Jurassic World: Fallen Kingdom"
-            />
-            <p class="card_caption">Jurassic World: Fallen Kingdom<br />2018</p>
-          </div></a>
-          <a class = "card_link" href = "#movie_six"><div class="card">
-            <img
-              class="card_poster"
-              src="assets/Timeline/JurassicPark_6.jpeg"
-              alt="Battle at Big Rock"
-            />
-            <p class="card_caption">Battle At Big Rock<br />2019</p>
-          </div></a>
-          <a class = "card_link"href = "#movie_seven"><div class="card">
-            <img
-              class="card_poster"
-              src="assets/Timeline/JurassicPark_7.jpeg"
-              alt="Jurassic World Dominion"
-            />
-            <p class="card_caption">Jurassic World Dominion<br />2022</p>
-          </div></a>
-         <a class = "card_link" href = "#movie_eight"><div class="card">
-            <img
-              class="card_poster"
-              src="assets/Timeline/JurassicPark_8.jpeg"
-              alt="Jurasic World Rebirth"
-            />
-            <p class="card_caption">Jurassic World Rebirth<br />2025</p>
-          </div></a>
+        <section id="top" class="card_container">
+          <a class="card_link" href="#movie_one"
+            ><div class="card">
+              <img
+                class="card_poster"
+                src="assets/Timeline/JurassicPark_1.jpeg"
+                alt="Jurassic Park"
+              />
+              <p class="card_caption">Jurassic Park <br />1993</p>
+            </div></a
+          >
+          <a class="card_link" href="#movie_two"
+            ><div class="card">
+              <img
+                class="card_poster"
+                src="assets/Timeline/JurassicPark_2.jpeg"
+                alt="Jurassic Park: The Lost World"
+              />
+              <p class="card_caption">
+                Jurrasic Park: The Lost World <br />1997
+              </p>
+            </div></a
+          >
+          <a class="card_link" href="#movie_three"
+            ><div class="card">
+              <img
+                class="card_poster"
+                src="assets/Timeline/JurassicPark_3.jpeg"
+                alt="Jurassic Park III"
+              />
+              <p class="card_caption">Jurassic Park III <br />2001</p>
+            </div></a
+          >
+          <a class="card_link" href="#movie_four"
+            ><div class="card">
+              <img
+                class="card_poster"
+                src="assets/Timeline/JurassicPark_4.jpg"
+                alt="Jurassic World"
+              />
+              <p class="card_caption">Jurassic World <br />2015</p>
+            </div></a
+          >
+          <a class="card_link" href="#movie_five"
+            ><div class="card">
+              <img
+                class="card_poster"
+                src="assets/Timeline/JurassicPark_5.jpg"
+                alt="Jurassic World: Fallen Kingdom"
+              />
+              <p class="card_caption">
+                Jurassic World: Fallen Kingdom<br />2018
+              </p>
+            </div></a
+          >
+          <a class="card_link" href="#movie_six"
+            ><div class="card">
+              <img
+                class="card_poster"
+                src="assets/Timeline/JurassicPark_6.jpeg"
+                alt="Battle at Big Rock"
+              />
+              <p class="card_caption">Battle At Big Rock<br />2019</p>
+            </div></a
+          >
+          <a class="card_link" href="#movie_seven"
+            ><div class="card">
+              <img
+                class="card_poster"
+                src="assets/Timeline/JurassicPark_7.jpeg"
+                alt="Jurassic World Dominion"
+              />
+              <p class="card_caption">Jurassic World Dominion<br />2022</p>
+            </div></a
+          >
+          <a class="card_link" href="#movie_eight"
+            ><div class="card">
+              <img
+                class="card_poster"
+                src="assets/Timeline/JurassicPark_8.jpeg"
+                alt="Jurasic World Rebirth"
+              />
+              <p class="card_caption">Jurassic World Rebirth<br />2025</p>
+            </div></a
+          >
         </section>
 
         <!--First Movie-->
         <article class="movies">
           <div class="movies_container">
-            <div>
+            <div class="movies_poster_container">
               <img
                 class="movies_poster"
                 src="assets/Timeline/JurassicPark_1.jpeg"
                 alt="Jurassic Park Poster"
               />
+              <caption class="movies_caption">
+                Jurassic Park, 1993
+              </caption>
             </div>
             <div class="summary_container">
-              <h2 class="movies_title" id = "movie_one">Jurassic Park</h2>
+              <h2 class="movies_title" id="movie_one">Jurassic Park</h2>
               <p class="movies_summary">
                 Industrialist John Hammond has created Jurassic Park, a theme
                 park of de-extincted dinosaurs, on the tropical island Isla
@@ -195,15 +228,20 @@
 
           <!--Second Movie-->
           <div class="movies_container">
-            <div>
+            <div class="movies_poster_container">
               <img
                 class="movies_poster"
                 src="assets/Timeline/JurassicPark_2.jpeg"
                 alt="Jurassic Park: The Lost World"
               />
+              <caption class="movies_caption">
+                Jurassic Park: The Lost World, 1997
+              </caption>
             </div>
             <div class="summary_container">
-              <h2 class="movies_title" id = "movie_two" >Jurassic Park: The Lost World</h2>
+              <h2 class="movies_title" id="movie_two">
+                Jurassic Park: The Lost World
+              </h2>
               <p class="movies_summary">
                 Four years after the events on Isla Nublar,[a] a British family
                 anchors their yacht off a beach on Isla Sorna and comes ashore,
@@ -283,15 +321,18 @@
 
           <!--Third Movie-->
           <div class="movies_container">
-            <div>
+            <div class="movies_poster_container">
               <img
                 class="movies_poster"
                 src="assets/Timeline/JurassicPark_3.jpeg"
                 alt="Jurassic Park III"
               />
+              <caption class="movies_caption">
+                Jurassic Park III, 2001
+              </caption>
             </div>
             <div class="summary_container">
-              <h2 class="movies_title"  id = "movie_three">Jurassic Park III</h2>
+              <h2 class="movies_title" id="movie_three">Jurassic Park III</h2>
               <p class="movies_summary">
                 Paleontologist Alan Grant struggles to secure funding for his
                 Velociraptor research, where he attempts to prove his hypothesis
@@ -360,15 +401,18 @@
 
           <!--Fourth Movie-->
           <div class="movies_container">
-            <div>
+            <div class="movies_poster_container">
               <img
                 class="movies_poster"
                 src="assets/Timeline/JurassicPark_4.jpg"
                 alt="Jurassic World"
               />
+              <caption class="movies_caption">
+                Jurassic World, 2015
+              </caption>
             </div>
             <div class="summary_container">
-              <h2 class="movies_title"  id = "movie_four">Jurassic World</h2>
+              <h2 class="movies_title" id="movie_four">Jurassic World</h2>
               <p class="movies_summary">
                 Years after the Jurassic Park disaster on Isla Nublar,[b]
                 Masrani Global Corporation acquired InGen's assets and
@@ -451,15 +495,20 @@
 
           <!--Fifth Movie-->
           <div class="movies_container">
-            <div>
+            <div class="movies_poster_container">
               <img
                 class="movies_poster"
                 src="assets/Timeline/JurassicPark_5.jpg"
                 alt="Jurassic World"
               />
+              <caption class="movies_caption">
+                Jurassic World: Fallen Kingdom, 2018
+              </caption>
             </div>
             <div class="summary_container">
-              <h2 class="movies_title"  id = "movie_five">Jurassic World: Fallen Kingdom</h2>
+              <h2 class="movies_title" id="movie_five">
+                Jurassic World: Fallen Kingdom
+              </h2>
               <p class="movies_summary">
                 Six months after the Jurassic World incident and the Indominus
                 rex's death,[b] a small mercenary team arrives on the abandoned
@@ -550,15 +599,18 @@
 
           <!--Sixth Movie-->
           <div class="movies_container">
-            <div>
+            <div class="movies_poster_container">
               <img
                 class="movies_poster"
                 src="assets/Timeline/JurassicPark_6.jpeg"
                 alt="Battle at Big Rock"
               />
+              <caption class="movies_caption">
+                Battle at Big Rock, 2019
+              </caption>
             </div>
             <div class="summary_container">
-              <h2 class="movies_title"  id = "movie_six">Battle at Big Rock</h2>
+              <h2 class="movies_title" id="movie_six">Battle at Big Rock</h2>
               <p class="movies_summary">
                 Set one year after the events of Jurassic World: Fallen Kingdom,
                 a blended family from Oakland, California goes on a camping trip
@@ -594,15 +646,20 @@
 
           <!--Seventh Movie-->
           <div class="movies_container">
-            <div>
+            <div class="movies_poster_container">
               <img
                 class="movies_poster"
                 src="assets/Timeline/JurassicPark_7.jpeg"
                 alt="Jurassic World Dominion"
               />
+              <caption class="movies_caption">
+                Jurassic World Dominion, 2022
+              </caption>
             </div>
             <div class="summary_container">
-              <h2 class="movies_title"  id = "movie_seven">Jurassic World Dominion</h2>
+              <h2 class="movies_title" id="movie_seven">
+                Jurassic World Dominion
+              </h2>
               <p class="movies_summary">
                 Four years after the Lockwood Estate incident that followed the
                 volcanic eruption of Isla Nublar,[b] once-extinct dinosaurs and
@@ -689,15 +746,20 @@
 
           <!--Eighth Movie-->
           <div class="movies_container">
-            <div>
+            <div class="movies_poster_container">
               <img
                 class="movies_poster"
                 src="assets/Timeline/JurassicPark_8.jpeg"
                 alt="Jurassic World Rebirth"
               />
+              <caption class="movies_caption">
+                Jurassic World Rebirth, 2025
+              </caption>
             </div>
             <div class="summary_container">
-              <h2 class="movies_title"  id = "movie_eight">Jurassic World Rebirth</h2>
+              <h2 class="movies_title" id="movie_eight">
+                Jurassic World Rebirth
+              </h2>
               <p class="movies_summary">
                 In 2008, seven years after the rescue of Eric Kirby[b] and seven
                 years before the Jurassic World incident,[c] InGen uses a

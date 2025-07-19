@@ -7,13 +7,20 @@
   --yellow: #e5cb5f;
 }
 
+body {
+    background-color: var(--black);
+    margin: 0;
+    color: var(--off-white);
+    font-family: sans-serif;
+}
+
 header {
   background-color: var(--red);
   padding: 25px 10px;
 }
 
 .nav_container {
-  align-items: center;
+    align-items: center;
 }
 
 .menu_logo {
@@ -38,12 +45,6 @@ header {
   color: var(--yellow);
 }
 
-body {
-    background-color: var(--black);
-    color: var(--off-white);
-    font-family: sans-serif;
-}
-
 .main__heading {
     text-align: center;
     padding-top: 20px;
@@ -51,7 +52,7 @@ body {
 
 div {
     padding-bottom: 30px;
-}
+} 
 
 section {
     padding: 20px 20px 0px 20px;
@@ -62,8 +63,48 @@ h2 {
     padding-bottom: 20px;
 }
 
+.credits {
+    display: grid;
+    grid-template-areas: 
+    "m1"
+    "m2"
+    "m3"
+    "m4"
+    "m5"
+    "m6"
+    "m7";
+}
+
+.jurassic-park {
+    grid-area: m1;
+}
+
+.lost-world {
+    grid-area: m2;
+}
+
+.jp-three {
+    grid-area: m3;
+}
+
+.jurassic-world {
+    grid-area: m4;
+}
+
+.fallen-kingdom {
+    grid-area: m5;
+}
+
+.dominion {
+    grid-area: m6;
+}
+
+.rebirth {
+    grid-area: m7;
+}
+
 .credits__img {
-    width: 100%;
+    width: 75%;
     height: 100%;
 }
 
@@ -83,4 +124,23 @@ h2 {
   text-align: center;
   text-transform: uppercase;
   padding: 24px 0;
+}
+
+@media (min-width: 768px) {
+    .credits {
+        grid-template-areas: 
+            "m1 m2"
+            "m3 m4"
+            "m5 m6"
+            "m7 ."
+}
+}
+
+@media (min-width: 1280px) {
+    .credits {
+        grid-template-areas: 
+            "m1 m2 m3"
+            "m4 m5 m6"
+            "m7 . ."
+    }
 }

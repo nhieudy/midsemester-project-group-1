@@ -72,7 +72,8 @@ h2 {
     "m4"
     "m5"
     "m6"
-    "m7";
+    "m7"
+    "m8";
 }
 
 .jurassic-park {
@@ -95,12 +96,16 @@ h2 {
     grid-area: m5;
 }
 
-.dominion {
+.big-rock {
     grid-area: m6;
 }
 
-.rebirth {
+.dominion {
     grid-area: m7;
+}
+
+.rebirth {
+    grid-area: m8;
 }
 
 .credits__img {
@@ -132,8 +137,8 @@ h2 {
             "m1 m2"
             "m3 m4"
             "m5 m6"
-            "m7 ."
-}
+            "m7 m8"
+    }
 }
 
 @media (min-width: 1280px) {
@@ -141,6 +146,6 @@ h2 {
         grid-template-areas: 
             "m1 m2 m3"
             "m4 m5 m6"
-            "m7 . ."
+            "m7 m8 ."
     }
 }

@@ -1,30 +1,94 @@
-body {
- margin: 0;
-  background-color: beige;
+:root {
+  --black: #151515;
+  --dark-grey: #403d39;
+  --light-grey: #ccc5b9;
+  --off-white: #fffcf2;
+  --red: #aa2324;
+  --yellow: #e5cb5f;
+}
+.animate__animated.animate__fadeIn {
+  animation-duration: 4s;
+}
+
+/*Utility Classes*/
+.column {
   display: flex;
   flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+  background-color: var(--black);
   min-height: 100vh;
 }
+
+/*Top Arrow*/
+.top_arrow {
+  width: 10px;
+  height: auto;
+}
+.top_button {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: var(--off-white);
+  color: var(--dark-grey);
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 100%;
+  text-decoration: none;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+.top_button:hover {
+  color: var(--red);
+}
+/*Everything about Header*/
 header {
-    position: sticky;
-    top:0;
-    display: flex;
-  background-color: brown;
+  background-color: var(--red);
   padding: 25px 10px;
 }
-nav {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
+
+/*Menu Bar*/
+.nav_container {
+  align-items: center;
 }
-.main_container {
-  display: flex;
-  flex-direction: column;
+
+.menu_logo {
+  margin: -10px;
+  width: 150px;
+  height: auto;
 }
-.description {
-  background-color: white;
-  padding: 30px;
-  margin-bottom: 25px;
+
+.menu_link {
+  color: var(--off-white);
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 1.25rem;
+}
+
+.menu_link:hover,
+.menu_logo:hover {
+  color: var(--yellow);
+}
+
+/*End of Header*/
+
+/*Everything that involves the Movie Cards*/
+.card_subheading {
+  text-align: center;
 }
 
 .card_container {
@@ -34,36 +98,116 @@ nav {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  margin: 50px 0;
+  scrollbar-color: var(--dark-grey) var(--black);
+  scrollbar-width: thin;
 }
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  border-radius: 10%;
-  background-color: white;
-  padding-bottom: 30px;
+  border-radius: 30px;
+  background-color: var(--light-grey);
+  padding-bottom: 25px;
   margin: 20px;
 }
-.card img {
+.card_poster {
+  /*Object-fit: cover allows for the image to retain its aspect ratio and fills the given dimensions*/
   width: 300px;
-  border-radius: 10% 10% 0 0;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 30px 30px 0 0;
 }
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  /*box-shadow: 0 0 10px 10px rgb(170, 35, 36, 0.3);*/
+  transform: scale(1.05);
 }
-.card p {
+.card_link {
+  text-decoration: none;
+  color: var(--black);
+}
+.card_link:hover {
+  color: var(--red);
+}
+.card_caption {
   text-align: center;
 }
+/*End of Movie Cards*/
+
+/*Everything that involves Movie Summary*/
+.movies_container {
+  background-color: var(--black);
+  color: var(--light-grey);
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 35px;
+}
+
+.movies_container:nth-child(even) {
+  color: var(--black);
+  background-color: var(--light-grey);
+}
+
+.movies_poster_container {
+  text-align: center;
+  font-weight: 600;
+}
+
+.movies_poster {
+  height: 600px;
+  width: 400px;
+  border-radius: 50px;
+  object-fit: cover;
+  padding: 25px;
+}
+
+.movies_summary {
+  padding: 25px;
+}
+
+.movies_summary::first-letter {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.movies_title {
+  font-size: xx-large;
+  padding: 0 25px;
+  text-align: center;
+}
+/*End of Movie Container*/
+
+/*Footer*/
 footer {
   margin-top: auto;
-  background-color: white;
+  color: var(--off-white);
+  background-color: var(--red);
   text-align: center;
   text-transform: uppercase;
   padding: 24px 0;
 }
 
 /*For Desktop test*/
-@media (min-width: 768px){
-    nav{
-        flex-direction: row;
-    }
+@media (min-width: 768px) {
+  /*For Menu*/
+  header {
+    flex-direction: column;
+  }
+  .nav_container {
+    padding: 0 40px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .menu_link {
+    margin-left: 30px;
+    font-size: 1.25rem;
+  }
+
+  /*Change direction for movie summary cards*/
+  .movies_container:nth-child(odd) {
+    flex-direction: row;
+  }
+  .movies_container:nth-child(even) {
+    flex-direction: row-reverse;
+  }
 }

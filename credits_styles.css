@@ -7,50 +7,109 @@
   --yellow: #e5cb5f;
 }
 
-.header, .footer {
-    background-color: var(--red);
-    color: var(--off-white);
-    padding: 30px 30px 20px 30px;
-    text-align: center;
-    font-family: sans-serif;
-}
-
-.header__nav-link {
-    padding: 20px;
-    color: var(--off-white);
-    text-decoration: none;
-}
-
-.header__nav-link-select {
-    padding: 20px;
-    font-weight: bolder;
-    color: var(--yellow);
-    text-decoration: none;
-}
-
-.header__nav-link:hover {
-    font-weight: bolder;
-}
-
-.main__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 body {
     background-color: var(--black);
+    margin: 0;
     color: var(--off-white);
     font-family: sans-serif;
+}
+
+header {
+  background-color: var(--red);
+  padding: 25px 10px;
+}
+
+.nav_container {
+    align-items: center;
+}
+
+.menu_logo {
+  margin: -10px;
+  width: 150px;
+  height: auto;
+}
+
+.menu_link, .menu_link_select {
+  color: var(--off-white);
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 1.25rem;
+}
+
+.menu_link_select {
+    color: var(--yellow);
+}
+
+.menu_link:hover,
+.menu_logo:hover {
+  color: var(--yellow);
 }
 
 .main__heading {
-    padding-left: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+div {
+    padding-bottom: 30px;
+} 
+
+section {
+    padding: 20px 20px 0px 20px;
     text-align: center;
 }
 
+h2 {
+    padding-bottom: 20px;
+}
+
+.credits {
+    display: grid;
+    grid-template-areas: 
+    "m1"
+    "m2"
+    "m3"
+    "m4"
+    "m5"
+    "m6"
+    "m7"
+    "m8";
+}
+
+.jurassic-park {
+    grid-area: m1;
+}
+
+.lost-world {
+    grid-area: m2;
+}
+
+.jp-three {
+    grid-area: m3;
+}
+
+.jurassic-world {
+    grid-area: m4;
+}
+
+.fallen-kingdom {
+    grid-area: m5;
+}
+
+.big-rock {
+    grid-area: m6;
+}
+
+.dominion {
+    grid-area: m7;
+}
+
+.rebirth {
+    grid-area: m8;
+}
+
 .credits__img {
-    width: 100%;
+    width: 75%;
     height: 100%;
 }
 
@@ -63,15 +122,30 @@ body {
     font-style: italic;
 }
 
-section {
-    padding: 20px 20px 0px 20px;
-    text-align: center;
+.footer {
+  margin-top: auto;
+  color: var(--off-white);
+  background-color: var(--red);
+  text-align: center;
+  text-transform: uppercase;
+  padding: 24px 0;
 }
 
-div {
-    padding-bottom: 30px;
+@media (min-width: 768px) {
+    .credits {
+        grid-template-areas: 
+            "m1 m2"
+            "m3 m4"
+            "m5 m6"
+            "m7 m8"
+    }
 }
 
-h2 {
-    padding-bottom: 20px;
+@media (min-width: 1280px) {
+    .credits {
+        grid-template-areas: 
+            "m1 m2 m3"
+            "m4 m5 m6"
+            "m7 m8 ."
+    }
 }

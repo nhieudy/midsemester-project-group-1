@@ -6,6 +6,8 @@
   --red: #aa2324;
   --yellow: #e5cb5f;
 }
+
+/*Added my utility classes so your nav and footer works*/
 .column {
   display: flex;
   flex-direction: column;
@@ -20,7 +22,7 @@ body {
     background-color: var(--black);
     margin: 0;
     color: var(--off-white);
-    font-family: sans-serif;
+    font-family: "Outfit", sans-serif; /*Added fonts*/
 }
 
 header {

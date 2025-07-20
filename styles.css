@@ -47,6 +47,10 @@ header {
   height: auto;
 }
 
+.menu_link_select {
+    color: var(--yellow);
+}
+
 .menu_link {
   color: var(--off-white);
   text-decoration: none;

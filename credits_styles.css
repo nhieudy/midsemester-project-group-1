@@ -6,6 +6,15 @@
   --red: #aa2324;
   --yellow: #e5cb5f;
 }
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
 
 body {
     background-color: var(--black);
@@ -132,6 +141,20 @@ h2 {
 }
 
 @media (min-width: 768px) {
+      /*For Menu*/
+  header {
+    flex-direction: column;
+  }
+  .nav_container {
+    padding: 0 40px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .menu_link {
+    margin-left: 30px;
+    font-size: 1.25rem;
+  }
     .credits {
         grid-template-areas: 
             "m1 m2"

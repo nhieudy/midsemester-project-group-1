@@ -73,6 +73,7 @@ header {
 }
 
 .menu_link, .menu_link_select {
+  transition: 0.3s; /*Transition*/
   color: var(--off-white);
   text-decoration: none;
   margin-left: 15px;
@@ -89,6 +90,13 @@ header {
 }
 
 /*End of Header*/
+
+.main_header{
+     text-align: center;
+    padding-top: 30px;
+    margin-bottom: 0;
+    color: var(--off-white);
+}
 
 /*Everything that involves the Movie Cards*/
 .card_subheading {
@@ -107,7 +115,7 @@ header {
   scrollbar-width: thin;
 }
 .card {
-  transition: 0.3s;
+  transition: 0.3s; /*Transition*/
   border-radius: 30px;
   background-color: var(--light-grey);
   padding-bottom: 25px;
@@ -174,7 +182,7 @@ header {
   font-weight: 600;
 }
 .movies_title {
-  font-size: xx-large;
+  font-size: x-large;
   padding: 0 25px;
   text-align: center;
 }

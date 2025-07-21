@@ -51,7 +51,8 @@ header {
     color: var(--yellow);
 }
 
-.menu_link {
+.menu_link, .menu_link_select {
+  transition: 0.3s; /*Transition*/
   color: var(--off-white);
   text-decoration: none;
   margin-left: 15px;

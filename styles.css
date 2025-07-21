@@ -48,10 +48,11 @@ header {
 }
 
 .menu_link_select {
-    color: var(--yellow);
+  color: var(--yellow);
 }
 
-.menu_link, .menu_link_select {
+.menu_link,
+.menu_link_select {
   transition: 0.3s; /*Transition*/
   color: var(--off-white);
   text-decoration: none;

@@ -1,96 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meet the Dinosaurs</title>
-  <link rel="stylesheet" href="css/dinosaurs_style.css" />
-</head>
-<body>
-  <header class="header">
-    <nav class="header__nav">
-      <a href="index.html" class="header__nav-link">Home</a>
-      <a href="timeline.html" class="header__nav-link">Timeline</a>
-      <a href="credits.html" class="header__nav-link">Credits</a>
-      <a href="dinosaurs.html" class="header__nav-link-select">Dinosaurs</a>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meet the Dinosaurs</title>
+    <link rel="stylesheet" href="css/dinosaurs_style.css" />
+    <!--For the Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!--For the Animation-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+<header>
+      <!--Navigation Bar-->
+      <div class="nav_container column">
+        <img
+          class="menu_logo animate__animated animate__fadeIn"
+          src="assets/JurassicParkLogo.png"
+          alt="Logo"
+        />
+        <nav class="menu row">
+          <a class="menu_link" href="index.html">Home</a>
+          <a class="menu_link" href="timeline.html">Movies</a>
+          <a class="menu_link" href="credits.html">Credits</a>
+          <a class="menu_link_select menu_link" href="dinosaurs.html">Dinosaurs</a>
+        </nav>
+      </div>
+    </header>
 
-  <main class="dino">
-    <img src="assets/Dinosaurs/jurassic-logo.jpg" alt="Jurassic Park Logo" class="dino__logo" />
-    <h1 class="dino__title">Meet the Dinosaurs</h1>
+    <main class="dino">
+      <img
+        src="assets/Dinosaurs/jurassic-logo.jpg"
+        alt="Jurassic Park Logo"
+        class="dino__logo"
+      />
+      <h1 class="dino__title">Meet the Dinosaurs</h1>
 
-    <div class="dino__grid">
+      <div class="dino__grid">
+        <!-- T-Rex -->
+        <article class="dino__card">
+          <img
+            src="assets/Dinosaurs/trex.jpg"
+            alt="T-Rex"
+            class="dino__image"
+          />
+          <h2 class="dino__name">Tyrannosaurus Rex</h2>
+          <p class="dino__info">
+            <strong>Name meaning:</strong> “Tyrant lizard”
+          </p>
+          <p class="dino__info"><strong>Code name:</strong> T. rex</p>
+          <p class="dino__info"><strong>Diet:</strong> Carnivore</p>
+          <p class="dino__info">
+            <strong>Height:</strong> 3.66–4.9 m (12–16 ft)
+          </p>
+          <p class="dino__info">
+            <strong>Length:</strong> 12.3–14.3 m (40–47 ft)
+          </p>
+          <p class="dino__info"><strong>Weight:</strong> 9.8 tons</p>
+          <p class="dino__info">
+            <strong>Location:</strong> Canada, United States
+          </p>
+          <p class="dino__info">
+            <strong>Range:</strong> Isla Nublar, Isla Sorna, Mantah Corp Island
+          </p>
+          <p class="dino__info">
+            <strong>Time:</strong> Late Cretaceous (73–66 Ma)
+          </p>
+          <p class="dino__info"><strong>Birth type:</strong> Egg</p>
+        </article>
 
-      <!-- T-Rex -->
-      <article class="dino__card">
-        <img src="assets/Dinosaurs/trex.jpg" alt="T-Rex" class="dino__image" />
-        <h2 class="dino__name">Tyrannosaurus Rex</h2>
-        <p class="dino__info"><strong>Name meaning:</strong> “Tyrant lizard”</p>
-        <p class="dino__info"><strong>Code name:</strong> T. rex</p>
-        <p class="dino__info"><strong>Diet:</strong> Carnivore</p>
-        <p class="dino__info"><strong>Height:</strong> 3.66–4.9 m (12–16 ft)</p>
-        <p class="dino__info"><strong>Length:</strong> 12.3–14.3 m (40–47 ft)</p>
-        <p class="dino__info"><strong>Weight:</strong> 9.8 tons</p>
-        <p class="dino__info"><strong>Location:</strong> Canada, United States</p>
-        <p class="dino__info"><strong>Range:</strong> Isla Nublar, Isla Sorna, Mantah Corp Island</p>
-        <p class="dino__info"><strong>Time:</strong> Late Cretaceous (73–66 Ma)</p>
-        <p class="dino__info"><strong>Birth type:</strong> Egg</p>
-      </article>
+        <!-- Velociraptor -->
+        <article class="dino__card">
+          <img
+            src="assets/Dinosaurs/velociraptor.jpg"
+            alt="Velociraptor"
+            class="dino__image"
+          />
+          <h2 class="dino__name">Velociraptor</h2>
+          <p class="dino__info">
+            <strong>Name meaning:</strong> “Swift thief/robber”
+          </p>
+          <p class="dino__info"><strong>Code name:</strong> Raptor</p>
+          <p class="dino__info"><strong>Diet:</strong> Carnivore</p>
+          <p class="dino__info">
+            <strong>Height:</strong> 0.5–1.83 m (1.5–6 ft)
+          </p>
+          <p class="dino__info"><strong>Length:</strong> 1.5–3 m (5–13 ft)</p>
+          <p class="dino__info">
+            <strong>Weight:</strong> 7–150 kg (15–330 lbs)
+          </p>
+          <p class="dino__info"><strong>Location:</strong> China, Mongolia</p>
+          <p class="dino__info">
+            <strong>Range:</strong> Isla Nublar, Isla Sorna, Malta, US
+          </p>
+          <p class="dino__info">
+            <strong>Time:</strong> Late Cretaceous (75–71 Ma)
+          </p>
+          <p class="dino__info"><strong>Birth type:</strong> Egg</p>
+        </article>
 
-      <!-- Velociraptor -->
-      <article class="dino__card">
-        <img src="assets/Dinosaurs/velociraptor.jpg" alt="Velociraptor" class="dino__image" />
-        <h2 class="dino__name">Velociraptor</h2>
-        <p class="dino__info"><strong>Name meaning:</strong> “Swift thief/robber”</p>
-        <p class="dino__info"><strong>Code name:</strong> Raptor</p>
-        <p class="dino__info"><strong>Diet:</strong> Carnivore</p>
-        <p class="dino__info"><strong>Height:</strong> 0.5–1.83 m (1.5–6 ft)</p>
-        <p class="dino__info"><strong>Length:</strong> 1.5–3 m (5–13 ft)</p>
-        <p class="dino__info"><strong>Weight:</strong> 7–150 kg (15–330 lbs)</p>
-        <p class="dino__info"><strong>Location:</strong> China, Mongolia</p>
-        <p class="dino__info"><strong>Range:</strong> Isla Nublar, Isla Sorna, Malta, US</p>
-        <p class="dino__info"><strong>Time:</strong> Late Cretaceous (75–71 Ma)</p>
-        <p class="dino__info"><strong>Birth type:</strong> Egg</p>
-      </article>
+        <!-- Triceratops -->
+        <article class="dino__card">
+          <img
+            src="assets/Dinosaurs/Triceratops.jpg"
+            alt="Triceratops"
+            class="dino__image"
+          />
+          <h2 class="dino__name">Triceratops</h2>
+          <p class="dino__info">
+            <strong>Name meaning:</strong> “Three-horned face”
+          </p>
+          <p class="dino__info"><strong>Code name:</strong> Trike</p>
+          <p class="dino__info"><strong>Diet:</strong> Herbivore</p>
+          <p class="dino__info"><strong>Height:</strong> 3 m (10 ft)</p>
+          <p class="dino__info"><strong>Length:</strong> 9–10 m (30–33 ft)</p>
+          <p class="dino__info"><strong>Weight:</strong> 7–13 tons</p>
+          <p class="dino__info">
+            <strong>Location:</strong> Canada, United States
+          </p>
+          <p class="dino__info">
+            <strong>Range:</strong> Isla Nublar, Isla Sorna, Ireland, Malta
+          </p>
+          <p class="dino__info">
+            <strong>Time:</strong> Late Cretaceous (68–66 Ma)
+          </p>
+          <p class="dino__info"><strong>Birth type:</strong> Egg</p>
+        </article>
 
-      <!-- Triceratops -->
-      <article class="dino__card">
-        <img src="assets/Dinosaurs/Triceratops.jpg" alt="Triceratops" class="dino__image" />
-        <h2 class="dino__name">Triceratops</h2>
-        <p class="dino__info"><strong>Name meaning:</strong> “Three-horned face”</p>
-        <p class="dino__info"><strong>Code name:</strong> Trike</p>
-        <p class="dino__info"><strong>Diet:</strong> Herbivore</p>
-        <p class="dino__info"><strong>Height:</strong> 3 m (10 ft)</p>
-        <p class="dino__info"><strong>Length:</strong> 9–10 m (30–33 ft)</p>
-        <p class="dino__info"><strong>Weight:</strong> 7–13 tons</p>
-        <p class="dino__info"><strong>Location:</strong> Canada, United States</p>
-        <p class="dino__info"><strong>Range:</strong> Isla Nublar, Isla Sorna, Ireland, Malta</p>
-        <p class="dino__info"><strong>Time:</strong> Late Cretaceous (68–66 Ma)</p>
-        <p class="dino__info"><strong>Birth type:</strong> Egg</p>
-      </article>
+        <!-- Brachiosaurus -->
+        <article class="dino__card">
+          <img
+            src="assets/Dinosaurs/brachiosaurus.jpg"
+            alt="Brachiosaurus"
+            class="dino__image"
+          />
+          <h2 class="dino__name">Brachiosaurus</h2>
+          <p class="dino__info"><strong>Name meaning:</strong> “Arm lizard”</p>
+          <p class="dino__info"><strong>Code name:</strong> Brach, Brachi</p>
+          <p class="dino__info"><strong>Diet:</strong> Herbivore</p>
+          <p class="dino__info"><strong>Height:</strong> 12–13 m (40–43 ft)</p>
+          <p class="dino__info">
+            <strong>Length:</strong> 19–21.5 m (62–70 ft)
+          </p>
+          <p class="dino__info"><strong>Weight:</strong> 38–64 tons</p>
+          <p class="dino__info">
+            <strong>Location:</strong> North America, Portugal, Tanzania
+          </p>
+          <p class="dino__info">
+            <strong>Range:</strong> Isla Nublar, Isla Sorna, Brazil, Senegal
+          </p>
+          <p class="dino__info">
+            <strong>Time:</strong> Late Jurassic (154–150 Ma)
+          </p>
+          <p class="dino__info"><strong>Birth type:</strong> Egg</p>
+        </article>
+      </div>
+    </main>
 
-      <!-- Brachiosaurus -->
-      <article class="dino__card">
-        <img src="assets/Dinosaurs/brachiosaurus.jpg" alt="Brachiosaurus" class="dino__image" />
-        <h2 class="dino__name">Brachiosaurus</h2>
-        <p class="dino__info"><strong>Name meaning:</strong> “Arm lizard”</p>
-        <p class="dino__info"><strong>Code name:</strong> Brach, Brachi</p>
-        <p class="dino__info"><strong>Diet:</strong> Herbivore</p>
-        <p class="dino__info"><strong>Height:</strong> 12–13 m (40–43 ft)</p>
-        <p class="dino__info"><strong>Length:</strong> 19–21.5 m (62–70 ft)</p>
-        <p class="dino__info"><strong>Weight:</strong> 38–64 tons</p>
-        <p class="dino__info"><strong>Location:</strong> North America, Portugal, Tanzania</p>
-        <p class="dino__info"><strong>Range:</strong> Isla Nublar, Isla Sorna, Brazil, Senegal</p>
-        <p class="dino__info"><strong>Time:</strong> Late Jurassic (154–150 Ma)</p>
-        <p class="dino__info"><strong>Birth type:</strong> Egg</p>
-      </article>
-
-    </div>
-  </main>
-
-  <footer class="footer">
-    Jurassic Park 2025
-  </footer>
-</body>
+    <footer class = "footer">Group 1 Mid-Semester Project</footer>
+  </body>
 </html>

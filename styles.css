@@ -47,17 +47,16 @@ header {
   height: auto;
 }
 
-.menu_link_select {
-  color: var(--yellow);
-}
-
 .menu_link,
 .menu_link_select {
-  transition: 0.3s; /*Transition*/
   color: var(--off-white);
   text-decoration: none;
   margin-left: 15px;
   font-size: 1.25rem;
+}
+
+.menu_link_select {
+  color: var(--yellow);
 }
 
 .menu_link:hover,

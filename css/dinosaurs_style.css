@@ -1,51 +1,65 @@
 :root {
-  --black: #151515; 
-  --dark-grey: #403D39;
-  --light-grey: #CCC5B9; 
-  --off-white: #FFFCF2;
+  --black: #151515;
+  --dark-grey: #403d39;
+  --light-grey: #ccc5b9;
+  --off-white: #fffcf2;
   --red: #aa2324;
-  --yellow: #e5cb5f;
+  --yellow: #fff1b9;
+}
+.animate__animated.animate__fadeIn {
+  animation-duration: 4s;
 }
 
+/*Utility Classes*/
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
 /* Base */
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: "Outfit", sans-serif;
   background-color: var(--black);
   color: var(--off-white);
 }
-
-/* Header and Footer */
-.header, .footer {
+header {
   background-color: var(--red);
-  color: var(--off-white);
-  padding: 30px 30px 20px 30px;
-  text-align: center;
+  padding: 25px 10px;
+}
+/*For Nav Bar*/
+.nav_container {
+  align-items: center;
 }
 
-.header__nav-link {
-  padding: 20px;
+.menu_logo {
+  margin: -10px;
+  width: 150px;
+  height: auto;
+}
+
+.menu_link,
+.menu_link_select {
   color: var(--off-white);
   text-decoration: none;
+  margin-left: 15px;
+  font-size: 1.25rem;
 }
 
-.header__nav-link-select {
-  padding: 20px;
-  font-weight: bold;
+.menu_link_select {
   color: var(--yellow);
-  text-decoration: none;
 }
 
-.header__nav-link:hover {
-  font-weight: bold;
+.menu_link:hover,
+.menu_logo:hover {
+  color: var(--yellow);
 }
+/*End of Menu/Nav Bar*/
 
-.footer {
-  padding: 20px;
-  font-size: 1rem;
-}
-
-/* Dinosaur Section */
 .dino {
   background-color: var(--black);
   padding: 40px 20px;
@@ -110,6 +124,15 @@ body {
   color: var(--off-white);
 }
 
+footer {
+  margin-top: auto;
+  color: var(--off-white);
+  background-color: var(--red);
+  text-align: center;
+  text-transform: uppercase;
+  padding: 24px 0;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .dino__grid {
@@ -123,6 +146,22 @@ body {
   }
 }
 
+@media (min-width: 768px) {
+  /*For Menu*/
+  header {
+    flex-direction: column;
+  }
+  .nav_container {
+    padding: 0 40px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .menu_link {
+    margin-left: 30px;
+    font-size: 1.25rem;
+  }
+}
 /* Animation */
 @keyframes fadeIn {
   from {

@@ -7,7 +7,10 @@
   --yellow: #fff1b9;
 }
 
-/*Added my utility classes so your nav and footer works*/
+.animate__animated.animate__fadeIn {
+  animation-duration: 4s;
+}
+
 .column {
     display: flex;
     flex-direction: column;
@@ -22,7 +25,7 @@ body {
     background-color: var(--black);
     margin: 0;
     color: var(--light-grey);
-    font-family: "Outfit", sans-serif; /*Added fonts*/
+    font-family: "Outfit", sans-serif;
 }
 
 header {
@@ -41,7 +44,7 @@ header {
 }
 
 .menu_link, .menu_link_select {
-    transition: 0.3s; /*Transition*/
+    transition: 0.3s;
     color: var(--off-white);
     text-decoration: none;
     margin-left: 15px;
@@ -133,6 +136,7 @@ h2 {
 .credits__img {
     width: 75%;
     height: 100%;
+    border-radius: 30px;
 }
 
 .name {
@@ -154,7 +158,6 @@ h2 {
 }
 
 @media (min-width: 768px) {
-      /*For Menu*/
     header {
         flex-direction: column;
     }
@@ -179,7 +182,7 @@ h2 {
         scale: 90%;
     }
 
-    .name, .role {
+    .role {
         font-size: small;
     }
 
